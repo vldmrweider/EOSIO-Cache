@@ -16,8 +16,8 @@ public class BlockServiceImpl implements BlockService {
 
 
     @Override
-    public List<Block> findAll() {
-        return null;
+    public Block lastblock() {
+        return blockRepository.findTop1ByOrderByIdDesc();
     }
 
     @Override

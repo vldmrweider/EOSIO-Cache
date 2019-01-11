@@ -15,9 +15,9 @@ public class BlockController {
     private BlockService blockService;
 
     // list of all employee
-    @RequestMapping(value = "list", method = RequestMethod.GET)   // or use @GetMapping
-    public java.util.List<Block> listEmployee() {
-        return blockService.findAll();
+    @RequestMapping(value = "last", method = RequestMethod.GET)   // or use @GetMapping
+    public Block lastblock() {
+        return blockService.lastblock();
     }
 
     @RequestMapping(value = "block", method = RequestMethod.GET)   // or use @GetMapping
