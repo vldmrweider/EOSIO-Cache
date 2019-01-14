@@ -11,6 +11,7 @@
     <groupId>com.pugachev</groupId>
     <artifactId>emr</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>emr</name>
     <description>eos mongo rest</description>
 
@@ -32,9 +33,15 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
+        <finalName>EOSCache</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
