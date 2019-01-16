@@ -19,6 +19,10 @@ public class Block {
         return block_num;
     }
 
+    public void setBlock_num(int block_num) {
+        this.block_num = block_num;
+    }
+
     private BlockDetail block;
 
     public BlockDetail getBlock() {
