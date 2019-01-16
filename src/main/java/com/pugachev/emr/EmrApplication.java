@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 
 @SpringBootApplication
 //@ComponentScan({"com.pugachev.emr.service","com.pugachev.emr.repository"})
+//add new comment here
 @EnableMongoRepositories("com.pugachev.emr.repository")
 public class EmrApplication extends SpringBootServletInitializer {
 
